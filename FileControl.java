@@ -6,7 +6,7 @@ import java.io.*;
 public class FileControl {
 	//操作したいディレクトリ
 	File fileDir;
-	//fileDirで指定したディレクトーのファイル一覧
+	//fileDirで指定したディレクトリのファイル一覧
 	String[] fileList;
 	//操作したいディレクトリ名
 	String directoryName = "../TestFiles/";
