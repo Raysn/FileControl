@@ -4,11 +4,11 @@
 import java.io.*;
 
 public class FileControl {
-	//操作したいディレクトリー
+	//操作したいディレクトリ
 	File fileDir;
-	//fileDirで指定したディレクトリーのファイル一覧
+	//fileDirで指定したディレクトーのファイル一覧
 	String[] fileList;
-	//操作したいディレクトリー名
+	//操作したいディレクトリ名
 	String directoryName = "../TestFiles/";
 
 	public FileControl() {
@@ -28,7 +28,7 @@ public class FileControl {
 		System.out.println( "" );
 	}
 
-	//全てのファイルを削除する(ディレクトリーは削除しない)
+	//全てのファイルを削除する(ディレクトリは削除しない)
 	public void deleteAllFiles() {
 		for( int i = 0; i < fileList.length; i++ ) {
 			File tempFile = new File( directoryName + fileList[i] );
@@ -46,7 +46,7 @@ public class FileControl {
 		}
 	}
 	
-	//全てのディレクトリーを削除する(ファイルは削除しない)
+	//全てのディレクトリを削除する(ファイルは削除しない)
 	public void deleteAllDirectories() {
 		for( int i = 0; i < fileList.length; i++ ) {
 			File tempFile = new File( directoryName + fileList[i] );
